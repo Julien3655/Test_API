@@ -9,7 +9,7 @@ def index(limit,published:bool=True,sort:Optional[str]=None):
     if published:
         return {'data':f'{limit} blog list'}
     else:
-        return {'data':'rien'}
+        return {'data':'nothing'}
     
 @app.get('/blog/unpublished')
 def unpublished():
